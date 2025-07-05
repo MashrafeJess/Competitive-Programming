@@ -1,0 +1,17 @@
+#include <bits/stdc++.h> //? O(1) method for finding the max value within a certain range using Bit Manipulation
+using namespace std;
+
+int main() {
+    int t;
+    cin >> t;
+    while (t--) {
+        int n, x;
+        cin >> n >> x;
+        int ans;
+        if (((x - 1) | x) <= n)
+            ans = x - 1;
+        else
+            ans = x - 2;
+        cout << ans << "\n";
+    }
+}
